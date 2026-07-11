@@ -416,7 +416,7 @@
           <div class="info-line"><span class="label">Dirección</span><span class="value">Montevideo, Uruguay</span></div>
           <div class="info-line"><span class="label">Horario</span><span class="value">Lunes a viernes, 8:00 a 17:00 hs</span></div>
         </div>
-        <form>
+        <form id="contactForm" action="https://formspree.io/f/xpqvapqz" method="POST">
           <div class="form-row">
             <div class="field"><label for="nombre">Nombre</label><input id="nombre" type="text" name="nombre" required></div>
             <div class="field"><label for="empresa">Empresa</label><input id="empresa" type="text" name="empresa"></div>
@@ -436,7 +436,9 @@
             </select>
           </div>
           <div class="field"><label for="mensaje">Mensaje</label><textarea id="mensaje" name="mensaje" required></textarea></div>
-          <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+          <input type="hidden" name="_subject" value="Nueva consulta desde la web - Laboratorio Galatea">
+          <button type="submit" class="btn btn-primary" id="contactSubmitBtn">Enviar mensaje</button>
+          <p id="formStatus" role="status" style="display:none;margin-top:14px;font-size:0.88rem;"></p>
         </form>
       </div>
     </div>
@@ -497,6 +499,36 @@
     nav.classList.remove('open');
     burger.setAttribute('aria-expanded', 'false');
   }));
+
+  const contactForm = document.getElementById('contactForm');
+  const formStatus = document.getElementById('formStatus');
+  const submitBtn = document.getElementById('contactSubmitBtn');
+  contactForm.addEventListener('submit', async function(e){
+    e.preventDefault();
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Enviando...';
+    try{
+      const response = await fetch(contactForm.action, {
+        method: 'POST',
+        body: new FormData(contactForm),
+        headers: { 'Accept': 'application/json' }
+      });
+      if(response.ok){
+        contactForm.reset();
+        formStatus.textContent = '¡Gracias! Tu mensaje fue enviado. Te vamos a responder a la brevedad.';
+        formStatus.style.color = '#2E7D32';
+      } else {
+        formStatus.textContent = 'Hubo un problema al enviar el mensaje. Probá de nuevo o escribinos por WhatsApp.';
+        formStatus.style.color = '#C0392B';
+      }
+    } catch(err){
+      formStatus.textContent = 'Hubo un error de conexión. Probá de nuevo o escribinos por WhatsApp.';
+      formStatus.style.color = '#C0392B';
+    }
+    formStatus.style.display = 'block';
+    submitBtn.disabled = false;
+    submitBtn.textContent = 'Enviar mensaje';
+  });
 </script>
 
 </body>
