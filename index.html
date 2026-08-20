@@ -40,13 +40,13 @@
   .center-head{text-align:center;max-width:640px;margin:0 auto 56px;}
   .section-head{max-width:640px;margin-bottom:56px;}
   h2.section-title{font-size:clamp(1.7rem,3vw,2.3rem);}
-
+ 
   .btn{display:inline-flex;align-items:center;gap:8px;padding:14px 28px;font-size:0.9rem;font-weight:500;border-radius:var(--radius);cursor:pointer;border:1px solid transparent;transition:all .25s;white-space:nowrap;}
   .btn-primary{background:var(--navy);color:var(--white);}
   .btn-primary:hover{background:var(--blue);}
   .btn-outline{background:transparent;border:1px solid var(--navy);color:var(--navy);}
   .btn-outline:hover{background:var(--navy);color:var(--white);}
-
+ 
   /* HEADER */
   header{position:sticky;top:0;z-index:200;background:rgba(255,255,255,0.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--border);}
   .nav-wrap{display:flex;align-items:center;justify-content:space-between;padding:16px 32px;max-width:1200px;margin:0 auto;gap:20px;}
@@ -67,7 +67,7 @@
     .nav-right .btn-primary{display:none;}
     .burger{display:flex;}
   }
-
+ 
   /* HERO */
   .hero{background:var(--cream);}
   .hero-grid{display:grid;grid-template-columns:1.05fr 0.95fr;gap:60px;align-items:center;padding:80px 0 60px;}
@@ -80,7 +80,7 @@
   .drop{animation:drop-fall 2.6s ease-in-out infinite;}
   @keyframes drop-fall{0%{transform:translateY(-18px);opacity:0;}15%{opacity:1;}55%{transform:translateY(60px);opacity:1;}62%{opacity:0;}100%{opacity:0;transform:translateY(60px);}}
   @media(prefers-reduced-motion:reduce){.drop{animation:none;}}
-
+ 
   /* HIGHLIGHTS */
   .highlights-wrap{background:var(--white);border-top:1px solid var(--border);}
   .highlights{display:grid;grid-template-columns:repeat(3,1fr);gap:36px;padding:56px 0;}
@@ -89,7 +89,7 @@
   .highlight .icon{width:56px;height:56px;border-radius:50%;background:var(--gold-soft);display:flex;align-items:center;justify-content:center;margin-bottom:18px;color:var(--gold);}
   .highlight h3{font-size:1.05rem;margin-bottom:8px;}
   .highlight p{font-size:0.9rem;color:var(--text-soft);max-width:230px;}
-
+ 
   /* NOSOTROS */
   .split{display:grid;grid-template-columns:0.85fr 1.15fr;gap:70px;align-items:center;}
   @media(max-width:900px){.split{grid-template-columns:1fr;gap:36px;}}
@@ -98,7 +98,7 @@
   .split p{color:var(--text-soft);margin-bottom:16px;max-width:560px;}
   .link-gold{color:var(--gold);font-weight:500;display:inline-flex;align-items:center;gap:6px;margin-top:8px;}
   .link-gold:hover{color:var(--navy);}
-
+ 
   /* SERVICIOS ICON ROW */
   .services{background:var(--cream);}
   .service-icons{display:flex;justify-content:center;flex-wrap:wrap;gap:40px 34px;margin-bottom:48px;}
@@ -113,7 +113,7 @@
   .service-card{background:var(--white);padding:32px 26px;}
   .service-card h3{font-size:0.98rem;font-weight:600;font-family:'Inter',sans-serif;color:var(--navy);margin-bottom:8px;}
   .service-card p{font-size:0.85rem;color:var(--text-soft);}
-
+ 
   /* PROCESO */
   .proceso{background:var(--white);}
   .proceso-row{display:flex;justify-content:space-between;position:relative;gap:10px;flex-wrap:wrap;}
@@ -122,12 +122,12 @@
   .proceso-step{position:relative;z-index:1;flex:1 1 140px;text-align:center;min-width:130px;}
   .proceso-step .circle{width:52px;height:52px;border-radius:50%;background:var(--gold-soft);color:var(--navy);border:1px solid var(--gold);display:flex;align-items:center;justify-content:center;margin:0 auto 16px;font-family:'IBM Plex Mono',monospace;font-size:0.95rem;}
   .proceso-step h3{font-size:0.92rem;font-family:'Inter',sans-serif;font-weight:600;color:var(--navy);}
-
+ 
   /* AUDIENCIA */
   .audience-list{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;}
   .audience-chip{padding:14px 22px;border:1px solid var(--border);border-radius:40px;font-size:0.92rem;color:var(--navy);display:flex;align-items:center;gap:10px;}
   .audience-chip::before{content:"";width:6px;height:6px;background:var(--gold);border-radius:50%;}
-
+ 
   /* BLOG */
   .blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;}
   @media(max-width:900px){.blog-grid{grid-template-columns:1fr;}}
@@ -138,7 +138,7 @@
   .post h3{font-size:1.05rem;margin-bottom:10px;line-height:1.35;}
   .post p{font-size:0.87rem;color:var(--text-soft);flex:1;}
   .post .read{margin-top:16px;font-size:0.85rem;color:var(--navy);font-weight:500;}
-
+ 
   /* CONTACTO */
   .contact{background:var(--white);}
   .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;}
@@ -157,7 +157,7 @@
   input:focus,select:focus,textarea:focus{border-color:var(--blue);outline:none;}
   textarea{resize:vertical;min-height:100px;}
   form .btn{width:100%;justify-content:center;margin-top:6px;}
-
+ 
   /* FOOTER */
   footer{background:var(--navy-deep);color:rgba(255,255,255,0.72);padding:60px 0 26px;}
   .footer-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:40px;padding-bottom:36px;border-bottom:1px solid rgba(255,255,255,0.12);}
@@ -174,12 +174,12 @@
   footer li{margin-bottom:11px;font-size:0.88rem;}
   footer li a:hover{color:var(--white);}
   .footer-bottom{padding-top:24px;font-size:0.8rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;}
-
+ 
   .wa-float{position:fixed;bottom:26px;right:26px;z-index:300;width:56px;height:56px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 30px rgba(0,0,0,0.25);}
 </style>
 </head>
 <body>
-
+ 
 <header>
   <div class="nav-wrap">
     <a href="#inicio" class="logo">
@@ -201,9 +201,9 @@
     </div>
   </div>
 </header>
-
+ 
 <main>
-
+ 
   <!-- INICIO -->
   <section id="inicio" class="hero" style="padding-top:0;">
     <div class="container">
@@ -239,7 +239,7 @@
       </div>
     </div>
   </section>
-
+ 
   <div class="highlights-wrap">
     <div class="container">
       <div class="highlights">
@@ -267,7 +267,7 @@
       </div>
     </div>
   </div>
-
+ 
   <!-- NOSOTROS -->
   <section id="nosotros">
     <div class="container">
@@ -290,7 +290,7 @@
       </div>
     </div>
   </section>
-
+ 
   <!-- SERVICIOS -->
   <section id="servicios" class="services">
     <div class="container">
@@ -298,7 +298,7 @@
         <div class="eyebrow center">Nuestros servicios</div>
         <h2 class="section-title">Un acompañamiento integral, de la fórmula al lanzamiento</h2>
       </div>
-
+ 
       <div class="service-icons">
         <div class="service-icon"><div class="icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 21V10l6 4v-4l6 4V6l6 4v11H3z"/></svg></div><span>Fabricación para terceros</span></div>
         <div class="service-icon"><div class="icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 3h6M10 3v6l-5 9a2 2 0 0 0 2 3h10a2 2 0 0 0 2-3l-5-9V3"/></svg></div><span>Desarrollo de productos</span></div>
@@ -308,11 +308,11 @@
         <div class="service-icon"><div class="icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a13 13 0 0 1 0 18M12 3a13 13 0 0 0 0 18"/></svg></div><span>Hosting para importadores</span></div>
         <div class="service-icon"><div class="icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 8V6a4 4 0 0 0-8 0v2M5 8h14l-1 12H6L5 8z"/></svg></div><span>Expansión de marcas</span></div>
       </div>
-
+ 
       <div class="services-center-btn">
         <a href="#servicios-detalle" class="btn btn-outline">Ver todos los servicios</a>
       </div>
-
+ 
       <div class="services-detail" id="servicios-detalle">
         <div class="services-grid">
           <div class="service-card"><h3>Desarrollo de productos cosméticos</h3><p>Formulación a medida según el posicionamiento de cada marca.</p></div>
@@ -327,7 +327,7 @@
       </div>
     </div>
   </section>
-
+ 
   <!-- PROCESO -->
   <section id="proceso" class="proceso">
     <div class="container">
@@ -345,7 +345,7 @@
       </div>
     </div>
   </section>
-
+ 
   <!-- A QUIÉN AYUDAMOS -->
   <section id="audiencia" style="background:var(--cream);">
     <div class="container">
@@ -363,7 +363,7 @@
       </div>
     </div>
   </section>
-
+ 
   <!-- BLOG -->
   <section id="blog">
     <div class="container">
@@ -372,37 +372,12 @@
         <h2 class="section-title">Contenido técnico para quienes construyen marcas cosméticas</h2>
       </div>
       <div class="blog-grid">
-        <article class="post">
-          <div class="post-media"></div>
-          <div class="post-body">
-            <span class="eyebrow">Regulatorio</span>
-            <h3>Cómo registrar un producto cosmético en Uruguay</h3>
-            <p>Guía práctica para entender los pasos y requisitos del registro sanitario.</p>
-            <span class="read">Leer más →</span>
-          </div>
-        </article>
-        <article class="post">
-          <div class="post-media"></div>
-          <div class="post-body">
-            <span class="eyebrow">Fabricación</span>
-            <h3>¿Qué necesita tu marca para fabricar con éxito?</h3>
-            <p>Claves para preparar tu proyecto antes de iniciar la producción.</p>
-            <span class="read">Leer más →</span>
-          </div>
-        </article>
-        <article class="post">
-          <div class="post-media"></div>
-          <div class="post-body">
-            <span class="eyebrow">Importación</span>
-            <h3>Importar cosméticos a Uruguay: ¿por dónde empezar?</h3>
-            <p>Todo lo que necesitás saber antes de ingresar al mercado local.</p>
-            <span class="read">Leer más →</span>
-          </div>
-        </article>
+        <!-- BLOG_POSTS_START -->
+        <!-- BLOG_POSTS_END -->
       </div>
     </div>
   </section>
-
+ 
   <!-- CONTACTO -->
   <section id="contacto" class="contact">
     <div class="container">
@@ -443,9 +418,9 @@
       </div>
     </div>
   </section>
-
+ 
 </main>
-
+ 
 <footer>
   <div class="container">
     <div class="footer-grid">
@@ -483,11 +458,11 @@
     </div>
   </div>
 </footer>
-
+ 
 <a class="wa-float" href="https://wa.me/59897207079" target="_blank" rel="noopener" aria-label="Escribinos por WhatsApp">
   <svg width="26" height="26" viewBox="0 0 24 24" fill="white"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.36 5.07L2 22l5.06-1.33A9.94 9.94 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm5.2 14.2c-.22.62-1.28 1.18-1.77 1.24-.45.06-1.02.08-1.65-.1-.38-.11-.87-.28-1.5-.55-2.64-1.14-4.36-3.8-4.5-3.98-.13-.18-1.08-1.44-1.08-2.74 0-1.3.68-1.94.92-2.2.24-.26.53-.33.7-.33h.5c.16 0 .38-.03.58.44.22.53.75 1.83.82 1.96.07.13.11.29.02.47-.09.18-.13.29-.26.45-.13.16-.27.35-.39.47-.13.13-.27.27-.11.53.15.26.68 1.12 1.46 1.82 1 .9 1.85 1.18 2.11 1.31.26.13.41.11.56-.07.16-.18.66-.77.83-1.03.18-.26.35-.22.58-.13.24.09 1.5.71 1.76.84.26.13.44.2.5.31.07.11.07.65-.15 1.27z"/></svg>
 </a>
-
+ 
 <script>
   const burger = document.getElementById('burgerBtn');
   const nav = document.getElementById('navLinks');
@@ -499,7 +474,7 @@
     nav.classList.remove('open');
     burger.setAttribute('aria-expanded', 'false');
   }));
-
+ 
   const contactForm = document.getElementById('contactForm');
   const formStatus = document.getElementById('formStatus');
   const submitBtn = document.getElementById('contactSubmitBtn');
@@ -530,6 +505,6 @@
     submitBtn.textContent = 'Enviar mensaje';
   });
 </script>
-
+ 
 </body>
 </html>
